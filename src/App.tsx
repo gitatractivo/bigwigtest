@@ -6,7 +6,7 @@ import Cards from './Components/Cards';
 
 const App =()=>{
   return(
-      <div className=" bg-white">
+      <div className="min-w-screern min-h-screen bg-white px-5">
         <Nav/>
         <Hero/>
         <Menu/>

@@ -3,32 +3,33 @@ import gradient from "../assets/gradient.png";
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center space-y-4">
-      <div className=" py-4 text-center font-Outfit text-5xl font-light text-gray-800">
+      <div className=" py-4 text-black text-center font-outfit text-5xl font-normal">
         Unlock the
         <span className="bg-gradient text-transparent bg-clip-text font-Outfit text-6xl font-semibold">
-          Power of Ai{" "}
+          {" "}
+          Power of AI{" "}
         </span>
         with BigWig Media
       </div>
-      <div className=" content-center py-4 w-844px text-center font-Outfit text-black text-base font-normal">
+      <div className=" content-center py-4 w-844px text-center font-Outfit text-black text-xl z-10 w-full max-w-[844px] mx-auto font-normal">
         Stay at the forefront of innovation by harnessing cutting-edge AI tools,
         ensuring our solutions remain ahead of the curve with daily updates
       </div>
-      <div className="w-full relative flex justify-center items-center h-fit">
-      <div className="w-full max-w-[637px]   overflow-hidden mx-auto p-1  border-gradient border-[8px]">
-        <div className="flex  justify-between  border-2 border-opacity-0  overflow-hidden  rounded-[73px] items-center ">
-          <input
-            placeholder="Social Media"
-            className="w-full border-none rounded-l-[73px] outline-none p-4"
-          />
-          <div className="flex relative w-219.465 h-65.84 p-5 justify-center items-center gap-4 flex-shrink-0 rounded-full bg-gradient-to-r from-yellow-400 via-red-500 to-indigo-500">
-            <button className="text-white text-center font-Outfit text-lg font-semibold">
-              Search Ai tools
-            </button>
-          </div>
+      <div className="w-full relative my-8 flex justify-center items-center h-fit">
+        <div className="z-10 w-full max-w-[637px]  overflow-hidden mx-auto !p-2  border-gradient bg-white ">
+          <div className="flex  justify-between  border-2 border-opacity-0  overflow-hidden  rounded-[73px] items-center ">
+            <input
+              placeholder="Social Media"
+              className="w-full border-none z-10 rounded-l-[73px] outline-none p-4"
+            />
+            <div className="flex relative w-219.465 h-65.84 p-5 justify-center items-center gap-4 flex-shrink-0 rounded-full bg-gradient-to-r from-yellow-400 via-red-500 to-indigo-500">
+              <button className="text-white text-center font-Outfit text-lg font-semibold">
+                Search Ai tools
+              </button>
+            </div>
           </div>
         </div>
-          {/* <img src={gradient} alt="absolute top-1/2 left-1/2 -z-10" /> */}
+        <img src={gradient} className="absolute -z-1" />
       </div>
       {/* <div className="w-684 h-120.706 flex-shrink-0">
                 <div className="w-684 h-120.706 flex-shrink-0">
