@@ -11,11 +11,11 @@ const Hero = () => {
         </span>
         with BigWig Media
       </div>
-      <div className=" content-center py-4 w-844px text-center font-Outfit text-black text-xl z-10 w-full max-w-[844px] mx-auto font-normal">
+      <div className=" content-center py-4  text-center font-Outfit text-black text-xl z-10 w-full max-w-[320] md:auto lg:844px mx-auto font-normal">
         Stay at the forefront of innovation by harnessing cutting-edge AI tools,
         ensuring our solutions remain ahead of the curve with daily updates
       </div>
-      <div className="w-full relative my-8 flex justify-center items-center h-fit">
+      <div className="w-full max-w-[320] md:auto lg:844px relative my-8 flex justify-center items-center h-fit">
         <div className="z-10 w-full max-w-[637px]  overflow-hidden mx-auto !p-2  border-gradient bg-white ">
           <div className="flex  justify-between  border-2 border-opacity-0  overflow-hidden  rounded-[73px] items-center ">
             <input
