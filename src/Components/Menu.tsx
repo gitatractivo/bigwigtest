@@ -1,7 +1,7 @@
 const Menu = () => {
   return (
-    <div className="relative flex flex-row mt-14 justify-center gap-20 my-4 z-50 px-10">
-      <div className="flex flex-row w-1600 h-16 p-4 flex-shrink-0 items-center justify-center  gap-20 rounded-md bg-white shadow-md px-2">
+    <div className="relative flex flex-row mt-14 justify-center gap-20 my-4 z-50 px-10 w-full mx-w-[30px] md:auto lg:[920px]">
+      <div className="flex flex-row w-full mx-w-[240] md:auto lg:[644px] h-16 p-4 flex-shrink-0 items-center justify-center  gap-20 rounded-md bg-white shadow-md px-2">
         <button className="text-[rgba(30,30,30,0.50)] font-Outfit text-base font-medium">
           All
         </button>
@@ -25,7 +25,7 @@ const Menu = () => {
         </button>
       </div>
       <div className="">
-        <button className="flex flex-col w-30 h-16 p-4 flex-shrink-0 items-center justify-center gap-4 rounded-md bg-white shadow-md ">
+        <button className="flex flex-col w-full mx-w-[30px] md:auto lg:[920px] h-16 p-4 flex-shrink-0 items-center justify-center gap-4 rounded-md bg-white shadow-md ">
           <span className="w-30 h-30 flex-shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
