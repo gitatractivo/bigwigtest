@@ -54,7 +54,7 @@
   mask-composite: exclude;
 }
 .border-gradient:first-child::before{
-  padding: 7px;
+  padding: 5px;
 
 }
 .border-gradient:nth-child(2)::before{

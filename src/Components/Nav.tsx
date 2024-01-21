@@ -8,7 +8,7 @@ const Nav = () => {
   
  
   return (
-    <nav>
+    <nav className="sticky top-0 z-10">
       <div className="h-10vh flex justify-between z-50 text-black lg:py-5   px-24 mx-auto py-4  border-b ">
         <div className="flex items-center gap-4 cursor-pointer">
           <img src={logo} alt="" />

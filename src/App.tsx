@@ -6,11 +6,14 @@ import Cards from './Components/Cards';
 
 const App =()=>{
   return(
-      <div className="min-w-screern min-h-screen bg-white px-5">
+      <div className="min-w-screern min-h-screen bg-white ">
         <Nav/>
+        <div className="px-5">
+
         <Hero/>
         <Menu/>
         <Cards/>
+        </div>
 
       </div>
   );
