@@ -16,8 +16,9 @@ const Nav = () => {
           </span>
         </div>
         <div className="flex lg: gap-4 items center justify-end front-normal ">
-          {/* drop down here */}
+          <div className="flex justify-center"> 
           <button className="">Select Language</button>
+          </div>
           <button className="text-gray-900 font-outfit text-base font-semibold hover:text-gray-700 hover:drop-shadow-2xl ">
             Login
           </button>

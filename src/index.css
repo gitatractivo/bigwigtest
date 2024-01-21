@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-gradient{
+    background: linear-gradient(106deg, #FFC700 3.98%, #FF003D 40.34%, #9E00FF 75.58%, #00D1FF 95.68%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: Outfit; */
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.border-gradient {
+    border-image: linear-gradient(131deg, #FFC700 0%, #FF003D 31.5%, #9E00FF 66%, #00D1FF 100%);
+    border-image-slice: 1;
+    border-radius: 73px;
+  }
+.rounded-full{
+    border-radius: 999px;
+
+  }
