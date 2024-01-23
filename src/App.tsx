@@ -1,21 +1,15 @@
-import React from'react';
-import Nav from './Components/Nav';
-import Hero from './Components/Hero';
-import Menu from './Components/Menu';
-import Cards from './Components/Cards';
+import { Route, Routes } from 'react-router-dom';
+import Landing from './pages/Landing';
+import Login from './pages/Login';
 
 const App =()=>{
-  return(
-      <div className="min-w-screern min-h-screen bg-white ">
-        <Nav/>
-        <div className="px-5">
-
-        <Hero/>
-        <Menu/>
-        <Cards/>
-        </div>
-
-      </div>
+  return (
+    <div className="min-w-screern min-h-screen bg-white ">
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
   );
 };
 
