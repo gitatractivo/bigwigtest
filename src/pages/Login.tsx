@@ -10,7 +10,7 @@ const Login = (props: Props) => {
   const [password, setPassword] = useState("");
   return (
     <div className="flex  gap-2 ">
-      <div className="w-1/2 h-screen relative  flex items-center justify-">
+      <div className="w-1/2 h-screen relative  hidden md:flex items-center justify-">
         <img
           src={SideImg}
           alt="sideImg"
@@ -23,7 +23,7 @@ const Login = (props: Props) => {
           </span>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-1/2 h-screen">
+      <div className="flex flex-col items-center justify-center w-full md:w-1/2 h-screen">
         <div className="w-2/3 h-fit rounded-xl p-4 flex flex-col items-center justify-center shadow-medium gap-4">
           <h1 className="text-2xl font-semibold text-left ">Sign in</h1>
           <Input
@@ -51,7 +51,7 @@ const Login = (props: Props) => {
             auto
             shadow
             radius="full"
-            className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
+            className="p-2 bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
             // onPress={handleSubmit}
           >
             Sign In

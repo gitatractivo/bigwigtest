@@ -3,7 +3,7 @@ import gradient from "../assets/gradient.png";
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center space-y-4">
-      <div className=" py-4 text-black text-center font-outfit sm:text-[40px] md:text-[45px] lg:text-[50px] font-normal">
+      <div className=" py-4 text-black text-center font-outfit text-[40px] md:text-[45px] lg:text-[50px] font-normal flex flex-col md:block">
         Unlock the
         <span className="bg-gradient text-transparent bg-clip-text font-outfit font-semibold">
           {" "}
@@ -16,13 +16,13 @@ const Hero = () => {
         ensuring our solutions remain ahead of the curve with daily updates
       </div>
       <div className="w-full max-w-[320] md:auto lg:844px relative my-8 flex justify-center items-center h-fit">
-        <div className="z-10 w-full max-w-[637px]  overflow-hidden mx-auto !p-2  border-gradient bg-white ">
-          <div className="flex  justify-between  border-2 border-opacity-0  overflow-hidden  rounded-[73px] items-center ">
+        <div className="z-10 w-full max-w-[637px]  overflow-hidden mx-auto p-[6px] md:p-2  border-gradient bg-white ">
+          <div className="flex  justify-between   border-opacity-0  overflow-hidden  rounded-[73px] items-center ">
             <input
               placeholder="Social Media"
-              className="w-full border-none z-10 rounded-l-[73px] outline-none p-4"
+              className="w-full border-none z-10 rounded-l-[73px] outline-none px-4 py-1 md:py-4 placeholder:text-black"
             />
-            <button className=" text-white text-center font-outfit text-lg font-semibold flex relative w-219.465 h-65.84 p-5 justify-center items-center gap-4 flex-shrink-0 rounded-full bt-gradient">
+            <button className=" text-white text-center font-outfit md:text-lg font-semibold flex relative  text-xs  p-3 md:p-5 justify-center items-center gap-4 flex-shrink-0 rounded-full bt-gradient hover:opacity-80">
               Search Ai tools
             </button>
           </div>
