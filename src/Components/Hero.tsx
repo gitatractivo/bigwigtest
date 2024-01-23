@@ -22,11 +22,10 @@ const Hero = () => {
               placeholder="Social Media"
               className="w-full border-none z-10 rounded-l-[73px] outline-none p-4"
             />
-            <div className="flex relative w-219.465 h-65.84 p-5 justify-center items-center gap-4 flex-shrink-0 rounded-full bg-gradient-to-r from-yellow-400 via-red-500 to-indigo-500">
-              <button className="text-white text-center font-Outfit text-lg font-semibold">
+              <button className=" text-white text-center font-Outfit text-lg font-semibold flex relative w-219.465 h-65.84 p-5 justify-center items-center gap-4 flex-shrink-0 rounded-full bt-gradient">
                 Search Ai tools
               </button>
-            </div>
+            
           </div>
         </div>
         <img src={gradient} className="absolute -z-1" />

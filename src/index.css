@@ -1,13 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.bt-gradient{
+  background: linear-gradient(
+    160deg,
+    #FFC700 0%, #FF003D 31.5%, #9E00FF 66%, #00D1FF 100%
+  );
+}
 .bg-gradient {
   background: linear-gradient(
-    106deg,
-    #ffc700 3.98%,
+    126deg,
+    #ffc700 0.98%,
     #ff003d 40.34%,
-    #9e00ff 75.58%,
+    #9e00ff 78.58%,
     #00d1ff 95.68%
   );
   background-clip: text;
