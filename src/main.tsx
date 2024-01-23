@@ -4,11 +4,19 @@ import App from './App.tsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { NextUIProvider } from "@nextui-org/react";
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+import { ClerkProvider } from '@clerk/clerk-react'
+
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key")
+}
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <NextUIProvider>
-      <App />
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+        <App />
+      </ClerkProvider>
     </NextUIProvider>
   </BrowserRouter>
 );

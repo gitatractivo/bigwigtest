@@ -136,7 +136,7 @@ const Footer =()=>{
             </filter>
           </defs>
         </svg>
-        <div className="flex flex-wrap items-start gap-[83px]">
+        <div className="flex flex-wrap items-start gap-5 md:gap-[83px]">
           <div className="flex flex-col items-start justify-center gap-[18px] w-[303px] h-[167px]">
             <div className="flex flex-row items-center gap-[24px]">
               <img src={logo} alt="" />

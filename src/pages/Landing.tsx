@@ -15,7 +15,7 @@ const Landing = (props: Props) => {
   return (
     <div>
       <Nav />
-      <div className="px-5">
+      <div className="px-5 min-h-screen">
         <Hero />
 
         <div className="hidden md:block">
