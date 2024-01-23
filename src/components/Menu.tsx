@@ -8,7 +8,7 @@ const buttons = [
   {
     title: "Social Media Tools",
   },
-  
+
   {
     title: "Website Tools",
   },
@@ -64,7 +64,6 @@ const buttons = [
   {
     title: "Twitter Caption Generator",
   },
-
 ];
 const Menu = () => {
   const [selectedButton, setSelectedButton] =
@@ -75,42 +74,41 @@ const Menu = () => {
     <div className="relative flex flex-row mt-14 justify-end gap-3 my-4 z-10  w-5/6 mx-auto">
       <div
         className={cn(
-          " absolute left-0 z-40  w-[calc(100%-68px)] mx-w-[240] md:auto lg:[644px]  h-16 py-2 px-10   rounded-md bg-white shadow-md transition-all  duration-1000 delay-1000",
+          " absolute left-0 z-40  w-[calc(100%-68px)] mx-w-[240] md:auto lg:[644px]  h-16 py-2 px-10   rounded-md bg-white dark:bg-[#1E1E1E] shadow-md transition-all border border-gray-700   duration-1000 delay-1000",
           isOpen && "h-fit overflow-auto "
         )}
       >
         <div
           className={cn(
-            "w-full flex flex-row items-center justify-start overflow-hidden  gap-4 transition-all duration-300   text-xl font-bold",
+            "w-full flex flex-row items-center justify-start overflow-hidden  gap-4 transition-all duration-300  text-xl font-bold",
             isOpen && "h-fit overflow-auto flex-wrap justify-center"
           )}
         >
           {buttons.map((button) => (
             <button
               className={cn(
-                "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
+                "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium dark:text-gray-400",
                 button.title === selectedButton &&
-                  " border-gradient border-gradient-1 items-start text-black"
+                  " border-gradient border-gradient-1 items-start text-black dark:text-white"
               )}
               onClick={() => setSelectedButton(button.title)}
             >
               {button.title}
             </button>
           ))}
-       
         </div>
       </div>
 
       <div className="w-14 h-14">
         <button
           className={cn(
-            "flex flex-col w-30 h-16 p-4  items-center justify-center gap-4 rounded-md bg-white shadow-md "
+            "flex flex-col w-30 h-16 p-4  items-center justify-center gap-4 rounded-md border border-gray-700 bg-white dark:bg-[#1E1E1E]  shadow-md "
           )}
           onClick={() => setIsOpen(!isOpen)}
         >
           <span
             className={cn(
-              "w-30 h-30  transition-all duration-300 ",
+              "w-30 h-30  transition-all duration-300 dark:invert ",
               isOpen && "rotate-180"
             )}
           >

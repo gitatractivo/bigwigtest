@@ -14,7 +14,7 @@ type Props = {};
 
 const Landing = (props: Props) => {
   return (
-    <div>
+    <div className="bg-white dark:bg-[#1E1E1E]">
       <Nav />
       <div className="px-5 min-h-screen">
         <Hero />
@@ -26,10 +26,9 @@ const Landing = (props: Props) => {
         <div className="md:hidden">
           <MenuMobile />
         </div>
-        
 
       </div>
-        <Footer/>
+      <Footer />
     </div>
   );
 };

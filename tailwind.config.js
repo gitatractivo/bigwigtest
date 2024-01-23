@@ -23,8 +23,6 @@ module.exports = {
     fontFamily: {
       'outfit': ['Outfit'],
     },
-     
- 
 
     extend: {
       colors: {

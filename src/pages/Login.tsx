@@ -7,7 +7,7 @@ import { Button, Input, Modal, ModalContent } from "@nextui-org/react";
 import {
   SignOutButton,
   SignInButton,
-  SignedIn,
+  SignIn,
   SignedOut,
 } from "@clerk/clerk-react";
 
@@ -41,8 +41,8 @@ const Login = (props: Props) => {
           </span>
         </div>
       </div> */}
-      <div className="absolute bg-white top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 items-center gap-4 cursor-pointer">
-        <SignInButton />
+      <div className="absolute bg-white rounded-lg top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 items-center gap-4 cursor-pointer">
+        <SignIn />
       </div>
     </div>
   );
