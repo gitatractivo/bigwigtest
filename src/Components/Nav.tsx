@@ -1,17 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/Logo.png";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+} from "@nextui-org/react";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="sticky top-0 z-50 backnavdrop">
-      <div className="h-10vh flex justify-between z-50 text-black lg:py-5   px-24 mx-auto py-4  border-b ">
+      <div className="h-10vh flex justify-between z-50 text-black lg:py-5 px-9 md:px-14  lg:px-24 mx-auto py-4  border-b ">
         <div className="flex items-center gap-4 cursor-pointer">
           <img src={logo} alt="" />
-          <span className="text-gray-900  font-outfit text-2xl font-semibold">
+          <span className="text-gray-900 hidden md:block  font-outfit text-2xl font-semibold">
             BigWigMedia.ai
           </span>
         </div>
-        <div className="flex lg: gap-4 items center justify-end front-normal ">
+        <div className="hidden md:flex lg: gap-4 items center justify-end front-normal ">
           <div className="flex justify-center">
             <button className="">Select Language</button>
           </div>
@@ -21,6 +29,38 @@ const Nav = () => {
           <button className="flex px-4 py-2 justify-center items-center text-white font-outfit text-base font-semibold gap-2 rounded-3xl hover:bg-gray-800 bg-gray-900 shadow-md ">
             Sign Up
           </button>
+        </div>
+        <div className="md:hidden">
+          <Dropdown>
+            <DropdownTrigger>
+              <Button isIconOnly variant="light">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.79199 25.5416H28.2087M7.79199 18.25H28.2087M7.79199 10.9583H28.2087"
+                    stroke="black"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu
+              aria-label="Example with disabled actions"
+              disabledKeys={["edit", "delete"]}
+            >
+              <DropdownItem key="new">Sign In</DropdownItem>
+              <DropdownItem key="new">Sign Up</DropdownItem>
+
+              
+            </DropdownMenu>
+          </Dropdown>
         </div>
       </div>
     </nav>

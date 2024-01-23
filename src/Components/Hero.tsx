@@ -3,15 +3,15 @@ import gradient from "../assets/gradient.png";
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center space-y-4">
-      <div className=" py-4 text-black text-center font-outfit text-5xl font-normal">
+      <div className=" py-4 text-black text-center font-outfit sm:text-[40px] md:text-[45px] lg:text-[50px] font-normal">
         Unlock the
-        <span className="bg-gradient text-transparent bg-clip-text font-outfit text-6xl font-semibold">
+        <span className="bg-gradient text-transparent bg-clip-text font-outfit font-semibold">
           {" "}
           Power of AI{" "}
         </span>
         with BigWig Media
       </div>
-      <div className=" content-center py-4  text-center font-outfit text-black text-xl z-10 w-full max-w-[320] md:auto lg:844px mx-auto font-normal">
+      <div className="  sm:text-[14px] md:text-[17px] lg:text-[20px] content-center py-4  text-center font-outfit text-black   z-10 w-full max-w-[320] md:auto lg:844px mx-auto font-normal">
         Stay at the forefront of innovation by harnessing cutting-edge AI tools,
         ensuring our solutions remain ahead of the curve with daily updates
       </div>
