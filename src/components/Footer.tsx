@@ -3,14 +3,14 @@ import logo from "../assets/Logo.png";
 
 const Footer =()=>{
     return (
-      <div className="flex flex-col relative items-center gap-[25px] shrink-0 my-14 border-t pt-8 justify-center w-1280 h-285">
+      <div className="flex flex-col relative items-center gap-[25px] shrink-0 mt-14 border-t pt-8 px-8 justify-center w-full min-h-285">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="231"
           height="252"
           viewBox="0 0 231 252"
           fill="none"
-          className="absolute top-0 right-0 z-0 translate-x-1/2 -translate-y-1/2"
+          className="absolute top-0 right-0 z-0 "
         >
           <g opacity="0.7">
             <g opacity="0.7" filter="url(#filter0_f_231_180)">
@@ -77,7 +77,66 @@ const Footer =()=>{
             </filter>
           </defs>
         </svg>
-        <div className="inline-flex items-start gap-[102px]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="251"
+          height="237"
+          viewBox="0 0 251 237"
+          fill="none"
+          className="absolute bottom-0 left-0 z-0 "
+        >
+          <g opacity="0.7" filter="url(#filter0_f_231_177)">
+            <ellipse cx="-17.5" cy="188.5" rx="58.5" ry="60.5" fill="#FFC700" />
+          </g>
+          <g opacity="0.7" filter="url(#filter1_f_231_177)">
+            <ellipse cx="64.5" cy="227.5" rx="58.5" ry="60.5" fill="#FF003D" />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_231_177"
+              x="-203.2"
+              y="0.800003"
+              width="371.4"
+              height="375.4"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="63.6"
+                result="effect1_foregroundBlur_231_177"
+              />
+            </filter>
+            <filter
+              id="filter1_f_231_177"
+              x="-121.2"
+              y="39.8"
+              width="371.4"
+              height="375.4"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="63.6"
+                result="effect1_foregroundBlur_231_177"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <div className="flex flex-wrap items-start gap-[83px]">
           <div className="flex flex-col items-start justify-center gap-[18px] w-[303px] h-[167px]">
             <div className="flex flex-row items-center gap-[24px]">
               <img src={logo} alt="" />
@@ -94,8 +153,7 @@ const Footer =()=>{
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-start gap-[83px]">
-            <div className="flex flex-col items-start gap-[21px]">
+            <div className="flex flex-col items-start md:pl-[19px] gap-[21px]">
               <div className="text-black font-Outfit text-22.7 font-semibold">
                 Top Tools
               </div>
@@ -146,7 +204,7 @@ const Footer =()=>{
                 </div>
               </div>
             </div>
-          </div>
+          
         </div>
         <div className="text-black font-Outfit text-base font-medium leading-normal">
           © 2024 Bigwigmedia.ai. All rights reserved.

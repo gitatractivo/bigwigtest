@@ -25,9 +25,9 @@ const Landing = (props: Props) => {
         <div className="md:hidden">
           <MenuMobile />
         </div>
-        <Footer/>
 
       </div>
+        <Footer/>
     </div>
   );
 };
