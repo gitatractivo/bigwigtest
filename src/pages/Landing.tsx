@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Menu from "../components/Menu";
 import Cards from "../components/Cards";
 import MenuMobile from "@/components/MenuMobile";
+import Profile from "@/components/Profile";
 
 
 type Props = {};
@@ -25,6 +26,7 @@ const Landing = (props: Props) => {
         <div className="md:hidden">
           <MenuMobile />
         </div>
+        
 
       </div>
         <Footer/>
