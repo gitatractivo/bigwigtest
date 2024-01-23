@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+  @apply font-outfit
+}
 .bt-gradient{
   background: linear-gradient(
     160deg,
@@ -81,7 +84,7 @@
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  padding: 3px;
+  padding: 2px;
 
 }
 

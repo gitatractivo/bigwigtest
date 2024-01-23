@@ -22,7 +22,7 @@ const buttons = [
     title: "Paid Ad Tools",
   },
   {
-    title: "BLog Creator",
+    title: "Blog Creator",
   },
   {
     title: "Language Translator",
@@ -69,7 +69,7 @@ const buttons = [
 const Menu = () => {
   const [selectedButton, setSelectedButton] =
     useState<String>("Article Creator");
-    const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="relative flex flex-row mt-14 justify-end gap-3 my-4 z-10  w-5/6 mx-auto">
@@ -81,7 +81,7 @@ const Menu = () => {
       >
         <div
           className={cn(
-            "w-full flex flex-row items-center justify-start overflow-hidden  gap-4 transition-all duration-300",
+            "w-full flex flex-row items-center justify-start overflow-hidden  gap-4 transition-all duration-300   text-xl font-bold",
             isOpen && "h-fit overflow-auto flex-wrap justify-center"
           )}
         >
@@ -90,49 +90,14 @@ const Menu = () => {
               className={cn(
                 "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
                 button.title === selectedButton &&
-                  " border-gradient border-gradient-1 items-start"
+                  " border-gradient border-gradient-1 items-start text-black"
               )}
               onClick={() => setSelectedButton(button.title)}
             >
               {button.title}
             </button>
           ))}
-          {/* {buttons.map((button) => (
-            <button
-              className={cn(
-                "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
-                button.title === selectedButton &&
-                  " border-gradient border-gradient-1 items-start"
-              )}
-              onClick={() => setSelectedButton(button.title)}
-            >
-              {button.title}
-            </button>
-          ))} */}
-          {/* {buttons.map((button) => (
-            <button
-              className={cn(
-                "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
-                button.title === selectedButton &&
-                  " border-gradient border-gradient-1 items-start"
-              )}
-              onClick={() => setSelectedButton(button.title)}
-            >
-              {button.title}
-            </button>
-          ))} */}
-          {/* {buttons.map((button) => (
-            <button
-              className={cn(
-                "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
-                button.title === selectedButton &&
-                  " border-gradient border-gradient-1 items-start"
-              )}
-              onClick={() => setSelectedButton(button.title)}
-            >
-              {button.title}
-            </button>
-          ))} */}
+       
         </div>
       </div>
 

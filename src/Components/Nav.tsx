@@ -1,12 +1,7 @@
-
 import { useEffect } from "react";
 import logo from "../assets/Logo.png";
 
 const Nav = () => {
-  
-  
-  
- 
   return (
     <nav className="sticky top-0 z-50 backnavdrop">
       <div className="h-10vh flex justify-between z-50 text-black lg:py-5   px-24 mx-auto py-4  border-b ">
