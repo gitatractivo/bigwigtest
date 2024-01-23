@@ -8,9 +8,7 @@ const buttons = [
   {
     title: "Social Media Tools",
   },
-  {
-    title: "Seo Tools",
-  },
+  
   {
     title: "Website Tools",
   },
@@ -18,11 +16,55 @@ const buttons = [
     title: "Email Tools",
   },
   {
+    title: "SEO Tools",
+  },
+  {
+    title: "Paid Ad Tools",
+  },
+  {
     title: "BLog Creator",
+  },
+  {
+    title: "Language Translator",
+  },
+  {
+    title: "Video Downloaders",
+  },
+  {
+    title: "EmailTools",
+  },
+  {
+    title: "Paraphrase Tools",
+  },
+  {
+    title: "Blog Creators",
+  },
+
+  {
+    title: "Audio Tools",
   },
   {
     title: "Article Creator",
   },
+  {
+    title: "Newsletters",
+  },
+  {
+    title: "Press Releases",
+  },
+  {
+    title: "Facebook Post Caption Generator",
+  },
+  {
+    title: "Instagram Caption Generator",
+  },
+  {
+    title: "Threads Caption Generator",
+  },
+  {
+    title: "Twitter Caption Generator",
+  },
+
 ];
 const Menu = () => {
   const [selectedButton, setSelectedButton] =
@@ -55,7 +97,7 @@ const Menu = () => {
               {button.title}
             </button>
           ))}
-          {buttons.map((button) => (
+          {/* {buttons.map((button) => (
             <button
               className={cn(
                 "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
@@ -66,8 +108,8 @@ const Menu = () => {
             >
               {button.title}
             </button>
-          ))}
-          {buttons.map((button) => (
+          ))} */}
+          {/* {buttons.map((button) => (
             <button
               className={cn(
                 "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
@@ -78,8 +120,8 @@ const Menu = () => {
             >
               {button.title}
             </button>
-          ))}
-          {buttons.map((button) => (
+          ))} */}
+          {/* {buttons.map((button) => (
             <button
               className={cn(
                 "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
@@ -90,7 +132,7 @@ const Menu = () => {
             >
               {button.title}
             </button>
-          ))}
+          ))} */}
         </div>
       </div>
 
