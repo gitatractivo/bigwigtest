@@ -1,36 +1,100 @@
+import { useState } from "react";
+import { cn } from "../utils/funcitons";
+
+const buttons = [
+  {
+    title: "All",
+  },
+  {
+    title: "Social Media Tools",
+  },
+  {
+    title: "Seo Tools",
+  },
+  {
+    title: "Website Tools",
+  },
+  {
+    title: "Email Tools",
+  },
+  {
+    title: "BLog Creator",
+  },
+  {
+    title: "Article Creator",
+  },
+];
 const Menu = () => {
+  const [selectedButton, setSelectedButton] =
+    useState<String>("Article Creator");
+    const [isOpen, setIsOpen] = useState(false)
+
   return (
-
-    <div className="relative flex flex-row mt-14 justify-center gap-3 my-4 z-50  w-5/6 mx-auto">
-      <div className="flex flex-row w-full mx-w-[240] md:auto lg:[644px]  h-16 p-4 flex-shrink-0 items-center justify-center  gap-2 rounded-md bg-white shadow-md px-2">
-        <button className="text-[rgba(30,30,30,0.50)] font-Outfit w-full text-base font-medium">
-
-          All
-        </button>
-        <button className="flex flex-col  h-50 p-4 items-start gap-10 flex-shrink-0 border-2  border-gradient rounded-[73px]">
-          Social Media Tools
-        </button>
-        <button className="text-[rgba(30,30,30,0.50)] font-Outfit w-full text-base font-medium">
-          Seo Tools
-        </button>
-        <button className="text-[rgba(30,30,30,0.50)] font-Outfit w-full text-base font-medium">
-          Website Tools
-        </button>
-        <button className="text-[rgba(30,30,30,0.50)] font-Outfit w-full text-base font-medium">
-          Email Tools
-        </button>
-        <button className="text-[rgba(30,30,30,0.50)] font-Outfit w-full text-base font-medium">
-          BLog Creator
-        </button>
-        <button className="text-[rgba(30,30,30,0.50)] font-Outfit w-full text-base font-medium">
-          Article Creator
-        </button>
+    <div className="relative flex flex-row mt-14 justify-center gap-3 my-4 z-10  w-5/6 mx-auto">
+      <div className="flex flex-row w-full mx-w-[240] md:auto lg:[644px]  h-16 py-4 px-10  items-center justify-start overflow-hidden  gap-2 rounded-md bg-white shadow-md ">
+        {buttons.map((button) => (
+          <button
+            className={cn(
+              "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
+              button.title === selectedButton &&
+                " border-gradient border-gradient-1 items-start"
+            )}
+            onClick={() => setSelectedButton(button.title)}
+          >
+            {button.title}
+          </button>
+        ))}
+        {buttons.map((button) => (
+          <button
+            className={cn(
+              "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
+              button.title === selectedButton &&
+                " border-gradient border-gradient-1 items-start"
+            )}
+            onClick={() => setSelectedButton(button.title)}
+          >
+            {button.title}
+          </button>
+        ))}
+        {buttons.map((button) => (
+          <button
+            className={cn(
+              "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
+              button.title === selectedButton &&
+                " border-gradient border-gradient-1 items-start"
+            )}
+            onClick={() => setSelectedButton(button.title)}
+          >
+            {button.title}
+          </button>
+        ))}
+        {buttons.map((button) => (
+          <button
+            className={cn(
+              "text-[rgba(30,30,30,0.50)] font-outfit  border-none p-3 min-w-fit text-base font-medium",
+              button.title === selectedButton &&
+                " border-gradient border-gradient-1 items-start"
+            )}
+            onClick={() => setSelectedButton(button.title)}
+          >
+            {button.title}
+          </button>
+        ))}
       </div>
 
       <div className="w-14 h-14">
-        <button className="flex flex-col w-30 h-16 p-4 flex-shrink-0 items-center justify-center gap-4 rounded-md bg-white shadow-md ">
-
-          <span className="w-30 h-30 flex-shrink-0">
+        <button
+          className={cn(
+            "flex flex-col w-30 h-16 p-4  items-center justify-center gap-4 rounded-md bg-white shadow-md "
+          )}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span
+            className={cn(
+              "w-30 h-30  transition-all duration-300 ",
+              isOpen && "rotate-180"
+            )}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
