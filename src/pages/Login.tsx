@@ -10,12 +10,15 @@ import {
   SignIn,
   SignedOut,
 } from "@clerk/clerk-react";
+import { useAuth } from "@clerk/clerk-react";
 
 type Props = {};
 
 const Login = (props: Props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { getToken, isLoaded, isSignedIn, userId } = useAuth();
+  console.log("userId", userId);
   return (
     <div className="flex  gap-2 w-screen h-screen bg-black">
       <img

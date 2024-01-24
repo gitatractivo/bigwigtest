@@ -1,7 +1,12 @@
+import {useNavigate} from "react-router-dom"
+
 const Cards = () => {
+  const navigate = useNavigate()
   return (
     <div className="flex justify-center flex-wrap mt-5   gap-10">
-      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] dark:border dark:border-gray-700 w-full">
+      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] dark:border dark:border-gray-700 w-full" onClick={()=>{
+        navigate('/generate')
+      }}>
         <div className="flex flex-row gap-8  justify-center items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +55,9 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] border dark:border dark:border-gray-700 w-full">
+      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] border dark:border dark:border-gray-700 w-full" onClick={()=>{
+        navigate('/generate')
+      }}>
         <div className="flex flex-row gap-8  justify-center items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +121,9 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] border dark:border dark:border-gray-700 w-full">
+      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] border dark:border dark:border-gray-700 w-full" onClick={()=>{
+        navigate('/generate')
+      }}>
         <div className="flex flex-row gap-8  justify-center items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +216,9 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] dark:border dark:border-gray-700  w-full">
+      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] dark:border dark:border-gray-700  w-full" onClick={()=>{
+        navigate('/generate')
+      }}>
         <div className="flex flex-row gap-8  justify-center items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +286,9 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] border dark:border dark:border-gray-700 w-full">
+      <div className="flex flex-col gap-5 px-3 py-4 text-gray-700 shadow-xl rounded-xl  max-w-80 max-h-[227px] bg-white dark:bg-[#262626] border dark:border dark:border-gray-700 w-full" onClick={()=>{
+        navigate('/generate')
+      }}>
         <div className="flex flex-row gap-8  justify-center items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -82,7 +82,9 @@ const Nav = () => {
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>Sign In</DropdownMenuItem>
+              <DropdownMenuItem onClick={()=>{
+                navigate("/login")
+              }}>Sign In</DropdownMenuItem>
               <DropdownMenuItem>Sign Up</DropdownMenuItem>
               <DropdownMenuItem></DropdownMenuItem>
             </DropdownMenuContent>

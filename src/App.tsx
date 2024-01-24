@@ -14,7 +14,7 @@ const App =()=>{
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
 
-        <Route path="/ProfileP" element={<ProfileP />} />
+        <Route path="/profile" element={<ProfileP />} />
 
         <Route path="/generate" element={<Generate />} />
 
